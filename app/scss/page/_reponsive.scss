@@ -1,0 +1,171 @@
+@media (max-width:575px) {
+	.header {
+		&-top {
+			&-text {
+				text-align: center;
+				font-size: 12px;
+				width: 100%;
+			}
+		}
+
+		&-logo {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.menu-header {
+		position: absolute;
+		width: 100%;
+		padding-bottom: 50px;
+		height: max-content;
+		background: #fff;
+		left: 0;
+		transform: translate(-100%);
+		transition: transform 0.4s ease-in-out;
+		z-index: 5;
+	}
+
+	.menu-header.open {
+		transform: translateX(0);
+	}
+
+	.footer {
+		background: url(/images/Footer-MB.png) no-repeat;
+		padding-top: 72px;
+		padding-bottom: 30px;
+
+		&-info {
+			&:last-child {
+				margin-bottom: 30px;
+			}
+		}
+
+		&-menu {
+			margin-bottom: 30px;
+		}
+	}
+
+	.copyright {
+		padding: 20px 15px;
+
+		&-item {
+			&:first-child {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.section-title {
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+
+	.section-hello {
+		.box-img {
+			width: 100%;
+			aspect-ratio: 1/1;
+
+		}
+
+		.item {
+			&:first-child {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.section-trip {
+		padding-bottom: 220px;
+
+		.inner {
+			&-title {
+				margin: 0 0 12px 0;
+
+				&::after {
+					content: '';
+					left: -30px;
+					bottom: 10px;
+
+				}
+
+				&::before {
+					content: '';
+					left: -30px;
+					bottom: 22px;
+				}
+			}
+
+			ul {
+				padding-left: 15px;
+			}
+		}
+
+		.item {
+			padding-left: 50px;
+
+			.inner {
+				margin-bottom: 30px;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 0;
+
+				&::after {
+					content: '';
+					position: absolute;
+					height: 100%;
+					width: 3px;
+					top: 0;
+					left: 35px;
+					z-index: -1;
+					transform: translate(-50%, 15px);
+				}
+			}
+
+			&::before {
+				content: '';
+				display: none;
+			}
+		}
+
+		&::before {
+			content: '';
+			width: 229px;
+			height: 208px;
+			background: url(/images/ship-bg-mb.png) no-repeat;
+			background-size: cover;
+		}
+
+		&::after {
+			content: '';
+			width: 184px;
+			height: 166px;
+			right: 0;
+			top: auto;
+			bottom: 22px;
+			background: url(/images/ship-bg2-mb.png) no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+@media (max-width:390px) {
+	.section-trip {
+		padding-bottom: 185px;
+
+		&::before {
+			content: '';
+			width: 180px;
+			height: 165px;
+		}
+
+		&::after {
+			content: '';
+			width: 184px;
+			height: 166px;
+
+		}
+	}
+}

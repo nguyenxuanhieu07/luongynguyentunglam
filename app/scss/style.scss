@@ -1,0 +1,12 @@
+@import 'variable/variable';
+@import 'global';
+
+//component
+@import 'component/header';
+@import 'component/menu';
+@import 'component/footer';
+
+//page
+@import 'topo';
+@import 'page/homepage';
+@import 'page/reponsive';

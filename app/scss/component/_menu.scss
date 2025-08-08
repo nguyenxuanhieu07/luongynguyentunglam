@@ -1,0 +1,19 @@
+.navbar{
+	padding: 11px 0;
+	.nav{
+		&-link{
+			padding: 10px 16px;
+			color: #000;
+			font-weight: 500;
+			font-size: 16px;
+			&:hover{
+				color: $color_main_2;
+			}
+		}
+		&-item{
+			&:not(:last-child){
+				margin-right: 20px;
+			}
+		}
+	}
+}
