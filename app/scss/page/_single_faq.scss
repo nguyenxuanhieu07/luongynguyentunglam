@@ -1,3 +1,51 @@
+.form {
+	&-title {
+		font-family: 'BDStreetSignSans';
+		font-size: 28px;
+		font-weight: 400;
+		margin-bottom: 12px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	&-desc {
+		color: #fff;
+		font-size: 15px;
+		margin-bottom: 25px;
+	}
+	&-note{
+		color: #fff;
+		font-size: 15px;
+		font-style: italic;
+		margin-bottom: 0;
+	}
+	input,
+	select {
+		height: 45px;
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+
+	textarea {
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+
+	.btn-submit {
+		background: $color_main_2;
+		padding: 15px 45px;
+		color: #fff;
+		font-size: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+		width: max-content;
+		display: block;
+		border-radius: 150px;
+		overflow: hidden;
+		line-height: 1.2;
+	}
+}
+
 .box-form {
 	border-radius: 15px;
 	overflow: hidden;
@@ -6,46 +54,6 @@
 	.form {
 		position: relative;
 		z-index: 2;
-
-		&-title {
-			font-family: 'BDStreetSignSans';
-			font-size: 28px;
-			font-weight: 400;
-			margin-bottom: 12px;
-			color: #fff;
-			text-transform: uppercase;
-		}
-
-		&-desc {
-			color: #fff;
-			font-size: 15px;
-			margin-bottom: 25px;
-		}
-
-		input {
-			height: 45px;
-			border-radius: 10px;
-			margin-bottom: 15px;
-		}
-
-		textarea {
-			border-radius: 10px;
-			margin-bottom: 15px;
-		}
-
-		.btn-submit {
-			background: $color_main_2;
-			padding: 15px 45px;
-			color: #fff;
-			font-size: 15px;
-			font-weight: 700;
-			text-transform: uppercase;
-			width: max-content;
-			display: block;
-			border-radius: 150px;
-			overflow: hidden;
-			line-height: 1.2;
-		}
 	}
 
 	&-side {
@@ -215,16 +223,16 @@
 	img {
 		width: 100%;
 		border-radius: 10px;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
 
 	p {
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
 
 	ul {
 		padding-left: 15px;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 
 		li {
 			&:not(:last-child) {
@@ -279,5 +287,20 @@
 
 	&:not(:last-child) {
 		margin-bottom: 25px;
+	}
+}
+
+.comback {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 60px;
+
+	a {
+		color: $color_main_2;
+	}
+
+	img {
+		margin-right: 5px;
 	}
 }

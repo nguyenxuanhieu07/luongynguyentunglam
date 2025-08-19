@@ -276,6 +276,7 @@
 
 .section-why {
 	padding: 80px 0;
+	margin-bottom: 80px;
 	font-size: 17px;
 	background: url(/images/bg-why.png) no-repeat;
 	background-size: cover;
@@ -392,5 +393,269 @@
 		left: 0;
 		top: 40%;
 		transform: translateY(-50%);
+	}
+}
+
+.section-form {
+	position: relative;
+	padding-bottom: 80px;
+
+	.box-contact {
+		margin-bottom: 40px;
+	}
+
+	.box-info-home {
+		background: #F1E9D7;
+		border-radius: 15px;
+		padding: 35px 40px;
+
+		.box-title {
+			font-size: 17px;
+			font-weight: 700;
+			margin-bottom: 13px;
+		}
+
+		.box-info {
+			display: flex;
+			align-items: baseline;
+			margin-bottom: 0;
+
+			img {
+				margin-right: 12px;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+
+		.box-note {
+			color: $color_main_2;
+			font-size: 17px;
+			margin-bottom: 0;
+			font-style: italic;
+		}
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		background: url(/images/caydua2.png) no-repeat;
+		background-size: cover;
+		width: 300px;
+		height: 758px;
+		right: 0;
+		top: -160px;
+	}
+}
+
+.section-stories {
+	margin-bottom: 80px;
+
+	.list-stories {
+		margin-bottom: 0;
+	}
+}
+
+.post {
+	&-thumbnail {
+		width: 100%;
+		aspect-ratio: 263/194;
+		border-radius: 10px;
+		overflow: hidden;
+		margin-bottom: 15px;
+		display: block;
+
+		img {
+			object-fit: cover;
+			object-position: 50% 50%;
+			-o-object-position: 50% 50%;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&-title {
+		font-size: 17px;
+		font-weight: 700;
+	}
+
+	&-big {
+		.post-thumbnail {
+			aspect-ratio: 555/409;
+		}
+
+		.post-title {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+	}
+
+	&-desc {
+		color: #777777;
+		font-size: 17px;
+	}
+}
+
+.section-diary {
+	padding-bottom: 80px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url(/images/ship-bg-diary.png) no-repeat;
+		background-size: cover;
+		width: 340px;
+		height: 416px;
+	}
+}
+
+.list-post {
+	margin-bottom: 40px;
+
+	.item {
+		&:not(:nth-child(3)):not(:nth-child(4)) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.box-loadmore {
+	text-align: center;
+	font-weight: 700;
+
+	a {
+		color: $color_main_2;
+	}
+}
+
+.section-diary2 {
+	padding-bottom: 80px;
+
+	.list-post {
+		margin-bottom: 0;
+	}
+
+	.item {
+		margin-bottom: 30px;
+	}
+
+	.list-tag {
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.tag-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 181px;
+			height: 52px;
+			background: url(/images/bg-tag-none.png) no-repeat;
+			background-size: contain;
+			color: $color_main;
+			font-size: 14px;
+			font-weight: 700;
+
+			&.active {
+				background: url(/images/bg-tag.png) no-repeat;
+				background-size: contain;
+			}
+
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+		}
+	}
+}
+
+.section-social {
+	background-image: url(/images/bg-social2.png), url(/images/bg-social.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: 100% 100%, 0 20%;
+	min-height: 1020px;
+	.container {
+		max-width: 1555px;
+	}
+
+	.box-content {
+		height: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+
+		.section-desc {
+			width: 70%;
+		}
+	}
+
+	.list-box-social {
+		display: flex;
+	}
+
+	.box-social {
+		background: #fff;
+		padding: 10px;
+		border-radius: 10px;
+		padding-bottom: 22px;
+
+		&-img {
+			width: 100%;
+			aspect-ratio: 243/140;
+			margin-bottom: 15px;
+
+			img {
+				object-fit: cover;
+				object-position: 50% 50%;
+				-o-object-position: 50% 50%;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&-title {
+			font-size: 15px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		&-role {
+			height: 20px;
+			margin-bottom: 15px;
+			width: 164px;
+
+			img {
+				object-fit: cover;
+				object-position: 50% 50%;
+				-o-object-position: 50% 50%;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&-link {
+			background: #0866FF;
+			padding: 10px 20px;
+			border-radius: 10px;
+			overflow: hidden;
+			color: #fff;
+			font-size: 15px;
+			font-weight: 700;
+			width: max-content;
+			margin: 0 auto;
+			display: block;
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
 	}
 }
