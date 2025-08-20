@@ -12,6 +12,18 @@
 	font-size: 17px;
 }
 
+.section-linkmore {
+	width: max-content;
+	display: block;
+	background: $color_main_2;
+	color: #fff;
+	padding: 15px 30px;
+	font-size: 15px;
+	border-radius: 150px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
 .section-hello {
 	padding: 80px 0;
 
@@ -23,18 +35,6 @@
 			margin-bottom: 15px;
 			font-size: 17px;
 		}
-	}
-
-	.section-linkmore {
-		width: max-content;
-		display: block;
-		background: $color_main_2;
-		color: #fff;
-		padding: 15px 30px;
-		font-size: 15px;
-		border-radius: 150px;
-		margin-bottom: 20px;
-		font-weight: 700;
 	}
 
 	.section-link {
@@ -235,6 +235,7 @@
 	.inner {
 		background: #F2E9D7;
 		border-radius: 16px;
+		height: 100%;
 		padding: 30px 20px;
 	}
 }
@@ -578,6 +579,7 @@
 	background-repeat: no-repeat, no-repeat;
 	background-position: 100% 100%, 0 20%;
 	min-height: 1020px;
+
 	.container {
 		max-width: 1555px;
 	}
@@ -657,5 +659,39 @@
 		&:not(:last-child) {
 			margin-right: 30px;
 		}
+	}
+}
+
+.section-mess {
+	padding-bottom: 80px;
+	position: relative;
+
+	.box-img {
+		margin-bottom: 24px;
+	}
+
+	.section-linkmore {
+		margin: 0 auto;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: url(/images/ship-bg.png) no-repeat;
+		background-size: cover;
+		width: 488px;
+		height: 443px;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: url(/images/ship-bg2.png) no-repeat;
+		width: 488px;
+		height: 440px;
 	}
 }

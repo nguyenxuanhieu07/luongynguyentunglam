@@ -2,6 +2,7 @@ var slide_init={
 	init: function() {
 		slide_init.home_banner();
 		slide_init.stories_youtube();
+		slide_init.list_treatment();
 	},
 	home_banner: function() {
 		var list_slide=$('.section-banner'),
@@ -49,6 +50,34 @@ var slide_init={
 						settings: {
 							slidesToShow: 2,
 							slidesToScroll: 2,
+							infinite: true,
+							dots: false,
+							centerMode: false,
+							arrows: false,
+						},
+					},
+				],
+			});
+		}
+	},
+	list_treatment: function() {
+		var list_slide=$('.list-treatment'),
+			item=$('.list-treatment .box-treatment');
+		if(list_slide.length>0&&item.length>1) {
+			list_slide.slick({
+				dots: false,
+				arrow: true,
+				speed: 1000,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 575,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
 							infinite: true,
 							dots: false,
 							centerMode: false,
