@@ -3,6 +3,9 @@ var slide_init={
 		slide_init.home_banner();
 		slide_init.stories_youtube();
 		slide_init.list_treatment();
+		slide_init.list_therapy();
+		slide_init.list_therapy2();
+		slide_init.list_feeling();
 	},
 	home_banner: function() {
 		var list_slide=$('.section-banner'),
@@ -68,7 +71,7 @@ var slide_init={
 				dots: false,
 				arrow: true,
 				speed: 1000,
-				autoplay: true,
+				autoplay: false,
 				autoplaySpeed: 5000,
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -78,6 +81,90 @@ var slide_init={
 						settings: {
 							slidesToShow: 1,
 							slidesToScroll: 1,
+							infinite: true,
+							dots: false,
+							centerMode: false,
+							arrows: false,
+						},
+					},
+				],
+			});
+		}
+	},
+	list_therapy: function() {
+		var list_slide=$('.list-therapy'),
+			item=$('.list-therapy .inner');
+		if(list_slide.length>0&&item.length>1) {
+			list_slide.slick({
+				dots: false,
+				arrow: true,
+				speed: 1000,
+				autoplay: false,
+				autoplaySpeed: 5000,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				responsive: [
+					{
+						breakpoint: 575,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2 ,
+							infinite: true,
+							dots: false,
+							centerMode: false,
+							arrows: false,
+						},
+					},
+				],
+			});
+		}
+	},
+	list_therapy2: function() {
+		var list_slide=$('.list-therapy2'),
+			item=$('.list-therapy2 .inner');
+		if(list_slide.length>0&&item.length>1) {
+			list_slide.slick({
+				dots: false,
+				arrow: true,
+				speed: 1000,
+				autoplay: false,
+				autoplaySpeed: 5000,
+				slidesToShow: 4,
+				slidesToScroll: 4,
+				responsive: [
+					{
+						breakpoint: 575,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2 ,
+							infinite: true,
+							dots: false,
+							centerMode: false,
+							arrows: false,
+						},
+					},
+				],
+			});
+		}
+	},
+	list_feeling: function() {
+		var list_slide=$('.list-feeling'),
+			item=$('.list-feeling .inner');
+		if(list_slide.length>0&&item.length>1) {
+			list_slide.slick({
+				dots: false,
+				arrow: true,
+				speed: 1000,
+				autoplay: false,
+				autoplaySpeed: 5000,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				responsive: [
+					{
+						breakpoint: 575,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2 ,
 							infinite: true,
 							dots: false,
 							centerMode: false,
