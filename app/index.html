@@ -455,78 +455,84 @@
 		</section>
 		<section class="section-form">
 			<div class="container">
-				<div class="row box-contact">
-					<div class="col-md-6">
-						<div class="box-img">
-							<img src="images/bs4_1.png" alt="">
+				<div class="box-contact">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="box-img">
+								<img src="images/bs4_1.png" alt="" class="d-none d-md-block">
+								<img src="images/bs4 1.png" alt="" class="d-block d-md-none">
+							</div>
 						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="box-form-side">
-							<form action="" class="form">
-								<p class="form-title">Hẹn lịch khám với Lâm tui tại đây nghen!</p>
-								<div class="form-row">
-									<div class="col-md-12">
-										<input type="text" class="form-control" name="fullname" placeholder="Họ tên">
+						<div class="col-md-6">
+							<div class="box-form-side">
+								<form action="" class="form">
+									<p class="form-title">Hẹn lịch khám với Lâm tui tại đây nghen!</p>
+									<div class="form-row">
+										<div class="col-md-12">
+											<input type="text" class="form-control" name="fullname"
+												placeholder="Họ tên">
+										</div>
+										<div class="col-md-12">
+											<input type="text" class="form-control" name="numberphone"
+												pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}" placeholder="Số điện thoại">
+										</div>
+										<div class="col-md-6">
+											<input type="date" class="form-control" name="date" placeholder="Ngày khám">
+										</div>
+										<div class="col-md-6">
+											<select name="datetime" class="form-control">
+												<option value="">Giờ khám</option>
+												<option value="8:00">8:00</option>
+												<option value="8:30">8:30</option>
+												<option value="9:00">9:00</option>
+											</select>
+										</div>
 									</div>
-									<div class="col-md-12">
-										<input type="text" class="form-control" name="numberphone"
-											pattern="(\+84|0){1}(9|8|7|5|3){1}[0-9]{8}" placeholder="Số điện thoại">
+									<button type="submit" class="btn btn-submit">Gửi thông tin</button>
+									<div class="form-cta">
+										<a href="#" class="form-cta-item">
+											<img src="images/telephone-call.svg" alt="">
+											Gọi Lâm tui
+										</a>
+										<a href="#" class="form-cta-item">
+											<img src="images/icon-zalo.svg" alt="">
+											Nhắn Zalo
+										</a>
 									</div>
-									<div class="col-md-6">
-										<input type="date" class="form-control" name="date" placeholder="Ngày khám">
-									</div>
-									<div class="col-md-6">
-										<select name="datetime" class="form-control">
-											<option value="">Giờ khám</option>
-											<option value="8:00">8:00</option>
-											<option value="8:30">8:30</option>
-											<option value="9:00">9:00</option>
-										</select>
-									</div>
-								</div>
-								<button type="submit" class="btn btn-submit">Gửi thông tin</button>
-								<div class="form-cta">
-									<a href="#" class="form-cta-item">
-										<img src="images/telephone-call.svg" alt="">
-										Gọi Lâm tui
-									</a>
-									<a href="#" class="form-cta-item">
-										<img src="images/icon-zalo.svg" alt="">
-										Nhắn Zalo
-									</a>
-								</div>
-							</form>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="box-info-home row">
-					<div class="col-md-2">
-						<div class="box-logo">
-							<img src="images/logo-dmd.png" alt="">
+				<div class="box-info-home">
+					<div class=" row">
+						<div class="col-md-2">
+							<div class="box-logo">
+								<img src="images/logo-dmd.png" alt="">
+							</div>
 						</div>
-					</div>
-					<div class="col-md-5">
-						<p class="box-title">Nhà Thuốc Nam Y Đỗ Minh Đường HỒ CHÍ MINH</p>
-						<p class="box-info">
-							<img src="images/address.svg" alt="">
-							Địa chỉ: 179 Nguyễn Văn Thương, Phường 25, Quận Bình Thạnh, TP.HCM
-						</p>
-						<p class="box-info">
-							<img src="images/footer-phone.svg" alt="">
-							Hotline: 0938 449 768 - 0932 088 186
-						</p>
-						<p class="box-info">
-							<img src="images/email.svg" alt="">
-							Email: lienhe@dominhduong.com
-						</p>
-					</div>
-					<div class="col-md-5">
-						<p class="box-title">Làm việc tất cả các ngày trong tuần</p>
-						<p class="box-text-item">Sáng: Từ 8:00 - 12:00</p>
-						<p class="box-text-item">Chiều: Từ 13:30 - 17:30</p>
-						<p class="box-note">Bệnh nhân đến sau 17h30 vui lòng liên hệ trước để đặt lịch (Có chỗ để ô tô)
-						</p>
+						<div class="col-md-5">
+							<p class="box-title">Nhà Thuốc Nam Y Đỗ Minh Đường HỒ CHÍ MINH</p>
+							<p class="box-info">
+								<img src="images/address.svg" alt="">
+								Địa chỉ: 179 Nguyễn Văn Thương, Phường 25, Quận Bình Thạnh, TP.HCM
+							</p>
+							<p class="box-info">
+								<img src="images/footer-phone.svg" alt="">
+								Hotline: 0938 449 768 - 0932 088 186
+							</p>
+							<p class="box-info">
+								<img src="images/email.svg" alt="">
+								Email: lienhe@dominhduong.com
+							</p>
+						</div>
+						<div class="col-md-5">
+							<p class="box-title">Làm việc tất cả các ngày trong tuần</p>
+							<p class="box-text-item">Sáng: Từ 8:00 - 12:00</p>
+							<p class="box-text-item">Chiều: Từ 13:30 - 17:30</p>
+							<p class="box-note">Bệnh nhân đến sau 17h30 vui lòng liên hệ trước để đặt lịch (Có chỗ để ô tô)
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -596,7 +602,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="row">
-							<div class="col-md-6 item">
+							<div class="col-6 item">
 								<div class="post post-side">
 									<a href="" class="post-thumbnail">
 										<img src="images/post2.jpg" alt="">
@@ -609,7 +615,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 item">
+							<div class="col-6 item">
 								<div class="post post-side">
 									<a href="" class="post-thumbnail">
 										<img src="images/post3.jpg" alt="">
@@ -622,7 +628,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 item">
+							<div class="col-6 item">
 								<div class="post post-side">
 									<a href="" class="post-thumbnail">
 										<img src="images/post4.jpg" alt="">
@@ -635,7 +641,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 item">
+							<div class="col-6 item">
 								<div class="post post-side">
 									<a href="" class="post-thumbnail">
 										<img src="images/post5.jpg" alt="">
@@ -849,11 +855,14 @@
 					<div class="col-md-8">
 						<h2 class="section-title text-center">Lời nhắn gửi bà con gần xa</h2>
 						<div class="entry">
-							<p>Dù ở gần hay ở xa, Lâm tui luôn mong bà con mình khỏe mạnh – không chỉ hết bệnh mà còn sống khỏe, sống vui từ gốc. Y học
-							cổ truyền không phải thứ xa vời, mà là tri thức dân tộc – miễn mình hiểu và dùng đúng, thì cây cỏ quanh nhà cũng có thể
-							cứu người.</p>
-							<p>Tui không hứa sẽ chữa được tất cả, nhưng tui hứa sẽ luôn làm hết sức. Nếu bà con cần tui – tui có mặt, nếu bà con khỏe
-							lại – tui mừng.</p>
+							<p>Dù ở gần hay ở xa, Lâm tui luôn mong bà con mình khỏe mạnh – không chỉ hết bệnh mà còn
+								sống khỏe, sống vui từ gốc. Y học
+								cổ truyền không phải thứ xa vời, mà là tri thức dân tộc – miễn mình hiểu và dùng đúng,
+								thì cây cỏ quanh nhà cũng có thể
+								cứu người.</p>
+							<p>Tui không hứa sẽ chữa được tất cả, nhưng tui hứa sẽ luôn làm hết sức. Nếu bà con cần tui
+								– tui có mặt, nếu bà con khỏe
+								lại – tui mừng.</p>
 						</div>
 						<div class="box-img">
 							<img src="images/title-img.png" alt="">
@@ -922,6 +931,12 @@
 			</div>
 		</div>
 	</footer>
+	<div class="cta-site">
+		<div class="cta-site-item"><a href=""><img src="images/telephone-site.png" alt=""></a></div>
+		<div class="cta-site-item"><a href=""><img src="images/messenger-site.png" alt=""></a></div>
+		<div class="cta-site-item"><a href=""><img src="images/zalo-site.png" alt=""></a></div>
+		<div class="cta-site-item"><a href=""><img src="images/datlich-img.png" alt=""></a></div>
+	</div>
 	<div class="copyright">
 		<p class="copyright-item text-center">Bản quyền ©2025 Lương y Nguyễn Tùng Lâm</p>
 		<p class="copyright-item text-center">* Thông tin trên website mang tính tham khảo nội bộ về y học cổ truyền. Bà
